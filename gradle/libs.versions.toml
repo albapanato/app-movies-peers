@@ -9,6 +9,13 @@ lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
 composeBom = "2024.04.01"
 
+
+coilCompose = "2.7.0"
+navigationCompose = "2.8.0-beta06"
+kotlinxSerializationJson= "1.6.3"
+contentpager = "1.0.0"
+
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -25,7 +32,16 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 
+
+material-icons-extended = { group = "androidx.compose.material", name= "material-icons-extended"}
+androidx-navigation-compose = {module= "androidx.navigation:navigation-compose", version.ref= "navigationCompose"}
+kotlinx-serialization-json = {module= "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref="kotlinxSerializationJson"}
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+androidx-contentpager = { group = "androidx.contentpager", name = "contentpager", version.ref = "contentpager" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+kotlinxSerialitation = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 

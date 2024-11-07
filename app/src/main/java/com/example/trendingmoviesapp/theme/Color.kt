@@ -1,4 +1,4 @@
-package com.example.trendingmoviesapp.ui.theme
+package com.example.trendingmoviesapp.theme
 
 import androidx.compose.ui.graphics.Color
 

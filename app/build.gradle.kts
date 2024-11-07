@@ -1,17 +1,21 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
+
+///configuracion pluggin de serialization:
+    alias(libs.plugins.kotlinxSerialitation)
 }
 
 
 android {
     namespace = "com.example.trendingmoviesapp"
-    compileSdk = 34
+    compileSdk = 35 //Cambio de 34 a 35, creaba conflicto
 
     defaultConfig {
         applicationId = "com.example.trendingmoviesapp"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35 //Cambio de 34 a 35, creaba conflicto
         versionCode = 1
         versionName = "1.0"
 
@@ -67,6 +71,16 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation "com.squareup.retrofit2:retrofit:2.9.0"
-    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation(libs.coil.compose)
+    implementation(libs.material.icons.extended)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.kotlinx.serialization.json)
+
+
+
+
 }
